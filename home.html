@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyeong Gift</title>
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- <script src="script.js" defer></script> -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Gaya dasar untuk mengatur font ke Poppins */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+<nav class="navbar">
+    <img src="images/logo2.png" alt="">
+    <ul class="nav-links">
+        <li><a href="html/home.html" class="active">Beranda</a></li>
+        <li><a href="sejarah-1.html">Sejarah</a></li>
+        <li><a href="galeri.html">Produk</a></li>
+        <li><a href="kegiatan.html">Kegiatan</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="profile-section">
+        <span class="profile-name">Hello, Isyabella!</span>
+        <img src="images/bisnis.png" alt="Profile Icon" class="profile-icon" />
+    </div>
+</nav>
+
+<section class="hero">
+    <video autoplay loop muted playsinline class="hero-video">
+        <source src="vidio/grid.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+    <div class="hero-text">
+        <p class="welcome-text">Welcome to  Anyeong Gift</p>
+        <h3 class="hero-title">
+            Berikan sentuhan istimewa dengan hadiah yang dirancang sesuai keinginan Anda. Temukan keindahan dalam setiap detail kerajinan tangan kami! ✨
+        </h3>
+        <button class="cta-button">Gabung Sekarang</button>
+    </div>    
+</section>
+
+    
+
+
+         <!-- Jumbotron Section -->
+<section class="jumbotron">
+   <div class="jumbotron-container">
+       <!-- Teks di sebelah kiri -->
+       <div class="jumbotron-text">
+           <h1>Cerita Singkat</h1>
+           <p>
+            Anyeong Gift terinspirasi dari keinginan untuk menciptakan hadiah yang lebih dari sekadar barang, tetapi juga penuh makna dan keindahan. Kami memulai perjalanan ini dengan membuat buket dan hampers yang dirancang khusus untuk setiap pelanggan, memastikan setiap detail mencerminkan cerita dan momen spesial mereka.
+    Setiap produk kami dibuat dengan tangan, menggabungkan kreativitas dan sentuhan personal untuk menghasilkan karya yang unik dan berkesan. Kami percaya bahwa hadiah adalah cara untuk mengungkapkan perasaan dan menciptakan kenangan yang abadi.
+
+           </p>
+           <button id="cta-button" class="cta-button">Tonton Vidio</button>
+           <!-- Popup Video -->
+<div class="video-popup" id="video-popup">
+    <div class="video-content">
+        <span class="close-btn" id="close-popup">&times;</span>
+        <video controls>
+            <source src="vidio/opening.mp4" type="video/mp4">
+            Browser Anda tidak mendukung elemen video.
+        </video>
+    </div>
+</div>
+       </div>
+
+       <!-- Gambar di sebelah kanan -->
+       <div class="jumbotron-image">
+         <img src="images/fishing.jpg" alt="" width="200" height="250">
+       </div>
+   </div>
+     </section>
+     <br>
+    <br>
+
+  <footer>
+   <div class="footer-container">
+       <div class="footer-about">
+           <h4>Anyeong Gift</h4>
+           <p>Anyeong Gift hadir dari kecintaan pada seni kerajinan tangan, menciptakan buket dan hampers yang dirancang khusus untuk setiap momen spesial. Dengan perhatian pada detail dan sentuhan personal, kami percaya bahwa hadiah bukan sekadar barang, tetapi cara untuk menyampaikan perasaan dan menciptakan kenangan indah.</p>
+        </div>
+       <div class="footer-links">
+           <h4>Tautan Cepat</h4>
+           <ul>
+               <li><a href="home.html">Beranda</a></li>
+               <li><a href="sejarah-1.html">Sejarah</a></li>
+               <li><a href="galeri.html">Produk</a></li>
+               <li><a href="kegiatan.html">Kegiatan</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </div>
+       <div class="social-icons">
+         <h4>Ikuti Kami</h4>
+         <ul>
+             <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="https://youtu.be/PLESqcjC1yM?si=iCXbtSdG5kIWHlhi" target="_blank"><i class="fab fa-youtube"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-telegram"></i></a></li>
+             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+             
+         </ul>
+     </div>
+     
+     
+     
+     
+   </div>
+   <div class="footer-bottom">
+       <p>&copy; 2024 Nusantara. All rights reserved.</p>
+   </div>
+</footer>
+
+ <script src="./javascript/scripts.js"></script>
+ <!-- <script>
+    // Ambil elemen tombol dan popup
+//let watchVideoButton = document.getElementById('watch-video');
+let videoPopup = document.getElementById('video-popup');
+let closePopupButton = document.getElementById('close-popup');
+
+// Ketika tombol "Tonton Video" diklik
+watchVideoButton.addEventListener('click', () => {
+    videoPopup.style.display = 'flex'; // Tampilkan popup
+});
+
+// Ketika tombol close diklik
+closePopupButton.addEventListener('click', () => {
+    videoPopup.style.display = 'none'; // Sembunyikan popup
+});
+
+// Menutup popup jika pengguna mengklik di luar area konten video
+videoPopup.addEventListener('click', (e) => {
+    if (e.target === videoPopup) {
+        videoPopup.style.display = 'none';
+    }
+});
+
+ </script> -->
+
+</body>
+</html>
